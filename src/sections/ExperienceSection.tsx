@@ -1,7 +1,12 @@
 import { experiences } from "../data/experience";
 import { Section } from "../components/Section";
+import type { CVMode } from "../types/mode";
 
-export function ExperienceSection() {
+type ExperienceSectionProps = {
+  mode: CVMode;
+};
+
+export function ExperienceSection({ mode }: ExperienceSectionProps) {
   return (
     <Section title="Experience">
       <div className="space-y-6">
@@ -24,9 +29,14 @@ export function ExperienceSection() {
             </div>
 
             <ul className="list-disc space-y-1 pl-5 text-sm text-slate-700">
-              {experience.achievements.map((achievement) => (
-                <li key={achievement}>{achievement}</li>
-              ))}
+              {experience.achievements
+                .filter(
+                  (achievement) =>
+                    !achievement.modes || achievement.modes.includes(mode),
+                )
+                .map((achievement) => (
+                  <li key={achievement.text}>{achievement.text}</li>
+                ))}
             </ul>
           </div>
         ))}

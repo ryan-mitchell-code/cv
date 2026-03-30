@@ -1,6 +1,13 @@
 import { profile } from "../data/profile";
+import type { CVMode } from "../types/mode";
 
-export function ProfileSection() {
+type ProfileSectionProps = {
+  mode: CVMode;
+};
+
+export function ProfileSection({ mode }: ProfileSectionProps) {
+  void mode;
+
   return (
     <section className="rounded-xl border border-slate-200 bg-white p-6">
       <h1 className="text-3xl font-bold text-slate-900">{profile.name}</h1>

@@ -1,7 +1,14 @@
 import { skills } from "../data/skills";
 import { Section } from "../components/Section";
+import type { CVMode } from "../types/mode";
 
-export function SkillsSection() {
+type SkillsSectionProps = {
+  mode: CVMode;
+};
+
+export function SkillsSection({ mode }: SkillsSectionProps) {
+  void mode;
+
   return (
     <Section title="Skills">
       <div className="flex flex-wrap gap-2">

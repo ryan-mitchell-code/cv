@@ -7,9 +7,18 @@ export const experiences: Experience[] = [
     start: "2022",
     end: "Present",
     achievements: [
-      "Led IAM platform development",
-      "Managed a team of engineers",
-      "Delivered scalable identity solutions",
+      {
+        text: "Led a team of engineers delivering IAM platform",
+        modes: ["manager"],
+      },
+      {
+        text: "Designed scalable IAM architecture",
+        modes: ["techLead", "iam"],
+      },
+      {
+        text: "Implemented OIDC authentication flows",
+        modes: ["iam"],
+      },
     ],
   },
 ];
