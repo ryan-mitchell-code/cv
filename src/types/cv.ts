@@ -12,5 +12,8 @@ export interface Experience {
 export interface Profile {
   name: string;
   title: string;
-  summary: string;
+  summaries: {
+    text: string;
+    modes?: ("manager" | "techLead" | "iam")[];
+  }[];
 }
