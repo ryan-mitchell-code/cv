@@ -8,3 +8,5 @@ Rules:
 - Avoid unnecessary intermediate variables
 - Keep components purely presentational unless state is required
 - Keep components under 100 lines
+- Do not duplicate or re-export data or types across folders
+- Always import directly from source files (e.g. /src/data, /src/types)
