@@ -3,11 +3,17 @@ export interface Experience {
   role: string;
   start: string;
   end: string;
-  achievements: string[];
+  achievements: {
+    text: string;
+    modes?: ("manager" | "techLead" | "iam")[];
+  }[];
 }
 
 export interface Profile {
   name: string;
   title: string;
-  summary: string;
+  summaries: {
+    text: string;
+    modes?: ("manager" | "techLead" | "iam")[];
+  }[];
 }
