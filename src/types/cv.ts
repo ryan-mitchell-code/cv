@@ -6,3 +6,8 @@ export interface Experience {
   achievements: string[];
 }
 
+export interface Profile {
+  name: string;
+  title: string;
+  summary: string;
+}
