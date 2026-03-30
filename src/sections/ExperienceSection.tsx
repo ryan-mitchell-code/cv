@@ -1,11 +1,10 @@
 import { experiences } from "../data/experience";
+import { Section } from "../components/Section";
 
 export function ExperienceSection() {
   return (
-    <section className="rounded-xl border border-slate-200 bg-white p-6">
-      <h2 className="text-lg font-semibold text-slate-900">Experience</h2>
-
-      <div className="mt-4 space-y-6">
+    <Section title="Experience">
+      <div className="space-y-6">
         {experiences.map((experience) => (
           <div
             key={`${experience.company}-${experience.role}-${experience.start}`}
@@ -32,7 +31,6 @@ export function ExperienceSection() {
           </div>
         ))}
       </div>
-    </section>
+    </Section>
   );
 }
-
