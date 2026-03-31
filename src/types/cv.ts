@@ -23,3 +23,12 @@ export interface Profile {
     url: string;
   }[];
 }
+
+export interface Publication {
+  title: string;
+  description: string;
+  link?: {
+    label: string;
+    url: string;
+  };
+}
