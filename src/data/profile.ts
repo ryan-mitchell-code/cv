@@ -25,4 +25,18 @@ export const profile: Profile = {
       modes: ["iam"],
     },
   ],
+  links: [
+    {
+      label: "GitHub",
+      url: "https://github.com/ryan-mitchell-code",
+    },
+    {
+      label: "LinkedIn",
+      url: "https://www.linkedin.com/in/ryan-mitchell-noc/",
+    },
+    {
+      label: "Interactive CV",
+      url: "https://ryan-mitchell-code.github.io/cv/",
+    },
+  ],
 };

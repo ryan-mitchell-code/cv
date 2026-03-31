@@ -13,6 +13,9 @@
     border: none;
     box-shadow: none;
     padding: 0;
+  }
+
+  .experience-item {
     break-inside: avoid;
     page-break-inside: avoid;
   }
@@ -29,5 +32,9 @@
   p,
   li {
     color: #222;
+  }
+
+  .space-y-8 > * + * {
+    margin-top: 1rem !important;
   }
 }

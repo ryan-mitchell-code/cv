@@ -16,4 +16,8 @@ export interface Profile {
     text: string;
     modes?: ("manager" | "techLead" | "iam")[];
   }[];
+  links: {
+    label: string;
+    url: string;
+  }[];
 }

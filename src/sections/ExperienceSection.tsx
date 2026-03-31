@@ -13,7 +13,7 @@ export function ExperienceSection({ mode }: ExperienceSectionProps) {
         {experiences.map((experience) => (
           <div
             key={`${experience.company}-${experience.role}-${experience.start}`}
-            className="space-y-2"
+            className="space-y-2 experience-item"
           >
             <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
               <div>
@@ -32,7 +32,7 @@ export function ExperienceSection({ mode }: ExperienceSectionProps) {
               {experience.achievements
                 .filter(
                   (achievement) =>
-                    !achievement.modes || achievement.modes.includes(mode),
+                    !achievement.modes || achievement.modes.includes(mode)
                 )
                 .map((achievement) => (
                   <li key={achievement.text}>{achievement.text}</li>
