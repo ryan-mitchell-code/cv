@@ -21,7 +21,7 @@
   }
 
   section + section {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
   }
 
   h1,
@@ -35,6 +35,6 @@
   }
 
   .space-y-8 > * + * {
-    margin-top: 1rem !important;
+    margin-top: 0.5rem !important;
   }
 }

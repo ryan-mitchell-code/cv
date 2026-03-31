@@ -3,9 +3,28 @@ import type { Experience } from "../types/cv";
 export const experiences: Experience[] = [
   {
     company: "JPMorganChase",
-    role: "Vice President, Lead Software Engineer",
-    start: "2022",
-    end: "Present",
+    roles: [
+      {
+        title: "Vice President, Lead Software Engineer",
+        start: "2025",
+        end: "Present",
+      },
+      {
+        title: "Senior Associate Software Engineer",
+        start: "2023",
+        end: "2025",
+      },
+      {
+        title: "Associate Software Engineer",
+        start: "2022",
+        end: "2023",
+      },
+      {
+        title: "Software Engineer",
+        start: "2019",
+        end: "2022",
+      },
+    ],
     achievements: [
       {
         text:
@@ -53,38 +72,14 @@ export const experiences: Experience[] = [
     ],
   },
   {
-    company: "JPMorganChase",
-    role: "Software Engineer",
-    start: "2019",
-    end: "2022",
-    achievements: [
+    company: "KMSoft",
+    roles: [
       {
-        text:
-          "Built and integrated developer tooling to improve software quality and shift testing practices earlier in the development lifecycle",
-        modes: ["techLead"],
-      },
-      {
-        text:
-          "Developed tooling to enforce audit compliance for production releases across engineering teams",
-        modes: ["techLead"],
-      },
-      {
-        text:
-          "Collaborated with multiple teams to drive adoption of internal tools and improve engineering standards",
-        modes: ["manager"],
-      },
-      {
-        text:
-          "Integrated SaaS solutions with internal systems to provide commit-level analysis and insights",
-        modes: ["techLead"],
+        title: "Junior Software Engineer",
+        start: "2018",
+        end: "2019",
       },
     ],
-  },
-  {
-    company: "KMSoft",
-    role: "Junior Software Engineer",
-    start: "2018",
-    end: "2019",
     achievements: [
       {
         text:
