@@ -15,6 +15,29 @@ export function ProfileSection({ mode }: ProfileSectionProps) {
     <section className="rounded-xl border border-slate-200 bg-white p-6">
       <h1 className="text-3xl font-bold text-slate-900">{profile.name}</h1>
       <p className="mt-1 text-lg font-medium text-slate-700">{profile.title}</p>
+      <div className="mt-2 text-sm text-slate-700 print:text-black">
+        {profile.links.map((link, index) => (
+          <span key={link.url} className="inline print:block">
+            {index > 0 && (
+              <span className="mx-2 text-slate-400 print:hidden">|</span>
+            )}
+
+            <a
+              href={link.url}
+              target="_blank"
+              rel="noreferrer"
+              className="underline underline-offset-2 hover:text-slate-900"
+            >
+              {link.label}
+            </a>
+
+            {/* 👇 Show URL in print only */}
+            <span className="hidden print:inline text-xs text-slate-600 ml-1">
+              ({link.url.replace("https://", "")})
+            </span>
+          </span>
+        ))}
+      </div>
       <p className="mt-4 text-base leading-relaxed text-slate-600">{summary}</p>
     </section>
   );

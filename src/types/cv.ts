@@ -1,8 +1,10 @@
 export interface Experience {
   company: string;
-  role: string;
-  start: string;
-  end: string;
+  roles: {
+    title: string;
+    start: string;
+    end: string;
+  }[];
   achievements: {
     text: string;
     modes?: ("manager" | "techLead" | "iam")[];
@@ -15,5 +17,9 @@ export interface Profile {
   summaries: {
     text: string;
     modes?: ("manager" | "techLead" | "iam")[];
+  }[];
+  links: {
+    label: string;
+    url: string;
   }[];
 }
