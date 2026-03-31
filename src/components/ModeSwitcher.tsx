@@ -14,7 +14,7 @@ const labels = {
 
 export function ModeSwitcher({ mode, setMode }: ModeSwitcherProps) {
   return (
-    <div className="rounded-xl border border-slate-200 bg-white p-4">
+    <div className="rounded-xl border border-slate-200 bg-white p-4 print:hidden">
       <p className="text-sm font-medium text-slate-700">CV Mode</p>
       <div className="mt-3 flex flex-wrap gap-2">
         {CV_MODES.map((item) => (

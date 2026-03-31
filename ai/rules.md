@@ -14,3 +14,4 @@ Rules:
 - Avoid overriding Tailwind utility classes directly in CSS
 - Keep CSS minimal, predictable, and easy to reason about
 - Do not apply global styles to generic elements like div or button unless explicitly required
+- Hide interactive UI elements (buttons, inputs, controls) in print using Tailwind's print:hidden utility
