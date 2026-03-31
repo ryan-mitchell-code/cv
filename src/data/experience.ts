@@ -28,30 +28,31 @@ export const experiences: Experience[] = [
     achievements: [
       {
         text:
-          "Delivered IAM capabilities supporting secure external API access used by enterprise clients in a highly regulated financial environment",
-      },
-      {
-        text:
-          "Delivered IAM platform capabilities supporting secure external API access for enterprise clients, improving authentication reliability and security posture",
-      },
-      {
-        text:
-          "Lead a cross-location scrum team of 8 engineers delivering secure SSO and identity solutions for externally facing APIs",
+          "Promoted multiple times within JPMorganChase, progressing from Software Engineer to Vice President",
         modes: ["manager"],
       },
       {
         text:
-          "Manage and mentor 4 engineers, supporting career growth and team performance within a distributed organisation",
+          "Delivered IAM platform capabilities enabling secure external API access for enterprise clients in a highly regulated financial environment",
+      },
+      {
+        text:
+          "Led a cross-location scrum team of 8 engineers delivering SSO and identity solutions for externally facing APIs",
         modes: ["manager"],
       },
       {
         text:
-          "Drive engineering standards and collaborate with technical leads to unblock delivery and improve development practices",
+          "Managed and mentored engineers, supporting career growth and improving team performance within a distributed organisation",
         modes: ["manager"],
       },
       {
         text:
-          "Designed and delivered OAuth-based credential management for Payments Developer Portal integrating with Treasury APIs",
+          "Collaborated with technical leads to define engineering standards and unblock critical deliveries",
+        modes: ["manager"],
+      },
+      {
+        text:
+          "Designed and delivered OAuth-based credential management for the Payments Developer Portal integrating with Treasury APIs",
         modes: ["techLead", "iam"],
       },
       {
@@ -62,11 +63,6 @@ export const experiences: Experience[] = [
       {
         text:
           "Implemented embedded step-up authentication flows to enhance application security and user verification",
-        modes: ["iam"],
-      },
-      {
-        text:
-          "Delivered IAM capabilities supporting secure external access in a highly regulated financial environment",
         modes: ["iam"],
       },
     ],
@@ -92,7 +88,7 @@ export const experiences: Experience[] = [
       },
       {
         text:
-          "Engaged with customers and stakeholders to support product adoption in real-world environments",
+          "Worked with customers and stakeholders to support product adoption in real-world environments",
         modes: ["manager"],
       },
     ],
