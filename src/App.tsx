@@ -1,5 +1,6 @@
 import { ExperienceSection } from "./sections/ExperienceSection";
 import { ProfileSection } from "./sections/ProfileSection";
+import { PublicationsSection } from "./sections/PublicationsSection";
 import { SkillsSection } from "./sections/SkillsSection";
 import { ModeSwitcher } from "./components/ModeSwitcher";
 import { useState } from "react";
@@ -16,6 +17,7 @@ function App() {
         <ProfileSection mode={mode} />
         <SkillsSection mode={mode} />
         <ExperienceSection mode={mode} />
+        <PublicationsSection />
       </div>
     </div>
   );
