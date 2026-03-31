@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media print {
+  body {
+    background: white;
+    color: black;
+  }
+
+  section {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  section + section {
+    margin-top: 1rem;
+  }
+
+  h1,
+  h2 {
+    color: black;
+  }
+
+  p,
+  li {
+    color: #222;
+  }
+}
