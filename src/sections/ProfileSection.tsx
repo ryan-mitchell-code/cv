@@ -12,10 +12,14 @@ export function ProfileSection({ mode }: ProfileSectionProps) {
     .join(" ");
 
   return (
-    <section className="rounded-xl border border-slate-200 bg-white p-6">
-      <h1 className="text-3xl font-bold text-slate-900">{profile.name}</h1>
-      <p className="mt-1 text-lg font-medium text-slate-700">{profile.title}</p>
-      <div className="mt-2 text-sm text-slate-700 print:text-black">
+    <section className="rounded-xl border border-slate-200 bg-white p-6 dark:border-slate-700 dark:bg-slate-900">
+      <h1 className="text-3xl font-bold text-slate-900 print:text-2xl dark:text-slate-100">
+        {profile.name}
+      </h1>
+      <p className="mt-1 text-lg font-medium text-slate-700 print:text-base dark:text-slate-300">
+        {profile.title}
+      </p>
+      <div className="mt-2 text-sm text-slate-700 print:text-black dark:text-slate-300">
         {profile.links.map((link, index) => (
           <span key={link.url} className="inline print:block">
             {index > 0 && (
@@ -32,13 +36,15 @@ export function ProfileSection({ mode }: ProfileSectionProps) {
             </a>
 
             {/* 👇 Show URL in print only */}
-            <span className="hidden print:inline text-xs text-slate-600 ml-1">
+            <span className="ml-1 hidden text-xs text-slate-600 print:inline dark:text-slate-500">
               ({link.url.replace("https://", "")})
             </span>
           </span>
         ))}
       </div>
-      <p className="mt-4 text-base leading-relaxed text-slate-600">{summary}</p>
+      <p className="mt-4 text-base leading-relaxed text-slate-600 print:mt-2 print:leading-snug dark:text-slate-400">
+        {summary}
+      </p>
     </section>
   );
 }
