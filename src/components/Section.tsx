@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { useInView } from "../hooks/useInView";
 
 type SectionProps = {
   title: string;
@@ -7,9 +8,16 @@ type SectionProps = {
 };
 
 export function Section({ title, children, className }: SectionProps) {
+  const { ref, isInView } = useInView();
+
   return (
     <section
-      className={`rounded-xl border border-slate-200 bg-white p-6 dark:border-slate-700 dark:bg-slate-900 ${
+      ref={ref}
+      className={`rounded-xl border border-slate-200 bg-white p-6 transition-all duration-700 ease-out dark:border-slate-700 dark:bg-slate-900 motion-reduce:transition-none ${
+        isInView
+          ? "translate-y-0 opacity-100"
+          : "translate-y-3 opacity-0"
+      } print:translate-y-0 print:opacity-100 print:transition-none motion-reduce:translate-y-0 motion-reduce:opacity-100 ${
         className ?? ""
       }`}
     >
