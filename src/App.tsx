@@ -1,3 +1,4 @@
+import { EducationSection } from "./sections/EducationSection";
 import { ExperienceSection } from "./sections/ExperienceSection";
 import { ProfileSection } from "./sections/ProfileSection";
 import { PublicationsSection } from "./sections/PublicationsSection";
@@ -33,6 +34,7 @@ function App() {
         <SkillsSection mode={mode} />
         <ExperienceSection mode={mode} />
         <PublicationsSection />
+        <EducationSection />
       </div>
     </div>
   );

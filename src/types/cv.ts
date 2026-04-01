@@ -32,3 +32,12 @@ export interface Publication {
     url: string;
   };
 }
+
+export interface Education {
+  institution: string;
+  degree: string;
+  start: string;
+  end: string;
+  grade?: string;
+  highlights?: string[];
+}

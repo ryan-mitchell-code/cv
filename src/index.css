@@ -27,6 +27,16 @@
     page-break-inside: avoid;
   }
 
+  .education-item:first-child {
+    break-inside: auto;
+    page-break-inside: auto;
+  }
+
+  .education-item:not(:first-child) {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
   section + section {
     margin-top: 0.35rem;
   }
