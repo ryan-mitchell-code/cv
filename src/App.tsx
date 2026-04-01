@@ -20,7 +20,7 @@ function App() {
   }, [isDark]);
 
   return (
-    <div className="min-h-screen bg-slate-50 py-10 px-4 text-slate-900 dark:bg-slate-950 dark:text-slate-100 print:bg-white print:text-black">
+    <div className="min-h-screen bg-slate-50 py-10 px-4 text-slate-900 dark:bg-slate-950 dark:text-slate-100 print:bg-white print:py-5 print:px-4 print:text-black">
       <div className="mx-auto max-w-3xl space-y-8">
         <ViewControlsPanel
           mode={mode}

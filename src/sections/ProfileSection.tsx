@@ -13,10 +13,10 @@ export function ProfileSection({ mode }: ProfileSectionProps) {
 
   return (
     <section className="rounded-xl border border-slate-200 bg-white p-6 dark:border-slate-700 dark:bg-slate-900">
-      <h1 className="text-3xl font-bold text-slate-900 dark:text-slate-100">
+      <h1 className="text-3xl font-bold text-slate-900 print:text-2xl dark:text-slate-100">
         {profile.name}
       </h1>
-      <p className="mt-1 text-lg font-medium text-slate-700 dark:text-slate-300">
+      <p className="mt-1 text-lg font-medium text-slate-700 print:text-base dark:text-slate-300">
         {profile.title}
       </p>
       <div className="mt-2 text-sm text-slate-700 print:text-black dark:text-slate-300">
@@ -42,7 +42,7 @@ export function ProfileSection({ mode }: ProfileSectionProps) {
           </span>
         ))}
       </div>
-      <p className="mt-4 text-base leading-relaxed text-slate-600 dark:text-slate-400">
+      <p className="mt-4 text-base leading-relaxed text-slate-600 print:mt-2 print:leading-snug dark:text-slate-400">
         {summary}
       </p>
     </section>

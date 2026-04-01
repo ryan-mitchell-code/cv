@@ -4,7 +4,7 @@ import { publications } from "../data/publications";
 export function PublicationsSection() {
   return (
     <Section title="Publications">
-      <div className="space-y-6">
+      <div className="space-y-6 print:space-y-3">
         {publications.map((publication) => (
           <article key={publication.title} className="space-y-2">
             <h3 className="text-base font-semibold leading-snug text-slate-900 dark:text-slate-100">

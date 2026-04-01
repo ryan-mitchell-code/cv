@@ -13,10 +13,10 @@ export function Section({ title, children, className }: SectionProps) {
         className ?? ""
       }`}
     >
-      <h2 className="text-xl font-semibold text-slate-900 dark:text-slate-100">
+      <h2 className="text-xl font-semibold text-slate-900 print:text-lg dark:text-slate-100">
         {title}
       </h2>
-      <div className="mt-4">{children}</div>
+      <div className="mt-4 print:mt-2">{children}</div>
     </section>
   );
 }

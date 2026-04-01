@@ -9,7 +9,7 @@ type SkillsSectionProps = {
 export function SkillsSection({ mode }: SkillsSectionProps) {
   return (
     <Section title="Skills">
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-wrap gap-2 print:gap-1">
         {skills
           .filter((skill) => !skill.modes || skill.modes.includes(mode))
           .map((skill) => (
