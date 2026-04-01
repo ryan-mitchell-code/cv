@@ -9,14 +9,17 @@ type ExperienceSectionProps = {
 export function ExperienceSection({ mode }: ExperienceSectionProps) {
   return (
     <Section title="Experience">
-      <div className="space-y-6">
+      <div className="space-y-6 print:space-y-4">
         {experiences.map((experience) => (
-          <div key={experience.company} className="space-y-3 experience-item">
-            <p className="text-base font-semibold text-slate-800">
+          <div
+            key={experience.company}
+            className="space-y-3 print:space-y-2 experience-item"
+          >
+            <p className="text-base font-semibold text-slate-800 dark:text-slate-300">
               {experience.company}
             </p>
 
-            <div className="space-y-2">
+            <div className="space-y-2 print:space-y-1">
               {experience.roles.map((role, index) => (
                 <div
                   key={`${experience.company}-${role.title}-${role.start}-${role.end}`}
@@ -25,20 +28,20 @@ export function ExperienceSection({ mode }: ExperienceSectionProps) {
                   <p
                     className={
                       index === 0
-                        ? "text-base font-semibold text-slate-900"
-                        : "text-sm text-slate-600"
+                        ? "text-base font-semibold text-slate-900 dark:text-slate-100"
+                        : "text-sm text-slate-600 dark:text-slate-400"
                     }
                   >
                     {role.title}
                   </p>
-                  <p className="text-sm text-slate-500">
+                  <p className="text-sm text-slate-500 dark:text-slate-400">
                     {role.start} - {role.end}
                   </p>
                 </div>
               ))}
             </div>
 
-            <ul className="list-disc space-y-1 pl-5 text-sm text-slate-700">
+            <ul className="list-disc space-y-1 pl-5 text-sm text-slate-600 print:space-y-0.5 dark:text-slate-400">
               {experience.achievements
                 .filter(
                   (achievement) =>
@@ -48,7 +51,7 @@ export function ExperienceSection({ mode }: ExperienceSectionProps) {
                   <li key={achievement.text}>{achievement.text}</li>
                 ))}
             </ul>
-            <div className="space-y-3 border-b border-slate-200 pb-4 last:border-none" />
+            <div className="space-y-3 border-b border-slate-200 pb-4 last:border-none print:pb-2 dark:border-slate-700" />
           </div>
         ))}
       </div>

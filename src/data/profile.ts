@@ -7,11 +7,11 @@ export const profile: Profile = {
   summaries: [
     {
       text:
-        "Engineering leader specialising in Identity and Access Management, delivering secure authentication and credential management solutions for externally facing platforms within financial services. Experienced leading distributed teams and building IAM capabilities that enable secure, scalable API access.",
+        "Engineering leader specialising in Identity and Access Management, delivering secure authentication and credential management for externally facing platforms within financial services.",
     },
     {
       text:
-        "Leading cross-location engineering teams, driving delivery of critical IAM platforms, and shaping engineering standards across teams.",
+        "Leading distributed teams to deliver critical IAM platforms, driving engineering standards and enabling secure, scalable API access across enterprise systems.",
       modes: ["manager"],
     },
     {
@@ -21,7 +21,7 @@ export const profile: Profile = {
     },
     {
       text:
-        "Specialist in IAM, including SSO, OAuth-based credential management, step-up authentication, and secure access patterns for external APIs.",
+        "Specialist in IAM, including SSO, OAuth-based credential management, step-up authentication, and secure access patterns for externally facing APIs.",
       modes: ["iam"],
     },
   ],
